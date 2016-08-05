@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First page</title>
+</head>
+<body>
+<a href=second.html>go to second page</a>
+
+<button onclick="javascript:history.back()">go back</button>
+<button onclick="javascript:history.forward()">go forward</button>
+
+<script type=text/javascript>
+    var referres = document.referrer;
+    if (!referres) {
+        console.log("referres undefined");
+    }else {
+        console.log(document.referrer);
+    }
+
+
+
+</script>
+</body>
+</html>
